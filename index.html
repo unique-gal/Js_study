@@ -3,11 +3,23 @@
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <script src="src/test1.js"></script>
+    <script src="src/test2.js"></script>
   </head>
 
   <body>
-    <div id="app"></div>
-
-    <script src="src/index.js"></script>
+    <div id="app">
+      <form>
+        1st Number: <input type="text" id="firstnum" /><br />
+        2st Number: <input type="text" id="secondsnum" /><br />
+        <br />
+        <input type="button" value="곱하기" onClick="multiply()" />
+        <input type="button" value="나누기" onClick="divide()" />
+      </form>
+      <p>
+        결과는?
+        <span id="result"></span>
+      </p>
+    </div>
   </body>
 </html>

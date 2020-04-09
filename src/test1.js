@@ -1,12 +1,4 @@
-import "./styles.css";
-
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+document.getElementById("app").innerHTML = ``;
 
 // 1. 숫자 두개를 넘겨주면 두 숫자의 합을 돌려주는 function sum 을
 // 정의하세요(3가지 함수 스타일로)
