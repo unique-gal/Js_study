@@ -1,7 +1,7 @@
 // // 1.현재 날짜와 시간 구하기
 var today = new Date();
 var day = today.getDay();
-var daylist = ["월", "수", "수", "목", "금", "토", "일"];
+var daylist = ["월", "화", "수", "목", "금", "토", "일"];
 var hour = today.getHours();
 var minute = today.getMinutes();
 var seconds = today.getSeconds();
@@ -148,8 +148,8 @@ function javacheck(str) {
   if (str.length < 4) {
     return false;
   }
-  if(str.indexOf('java')){
+  if (str.indexOf("java")) {
     return true;
-  }else return false;
+  } else return false;
 }
-console.log(javacheck('checkjava'));
+console.log(javacheck("checkjava"));
