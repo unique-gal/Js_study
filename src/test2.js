@@ -152,4 +152,34 @@ function javacheck(str) {
     return true;
   } else return false;
 }
-console.log(javacheck("checkjava"));
+
+//주어진 2 정수 값이 50~99 범위에 있으면 true 반환
+function numcheck(x, y) {
+  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99)) {
+    return true;
+  } else return false;
+}
+console.log(numcheck(50, 80));
+console.log(numcheck(12, 101));
+
+// 30.문자열 5번째에 script가 존재하면 그대로 리턴, 없으면 추가
+function scriptcheck(str) {
+  if (str.substring(10, 4) === "script") {
+    return str;
+  } else return str + "script";
+}
+console.log(scriptcheck("java"));
+console.log(scriptcheck("javascript"));
+
+// 31.3개의 정수중 가장 큰 정수를 찾아서 반환
+function maxnum(x, y, z) {
+  let max_num = 0;
+  if (x > y) {
+    max_num = x;
+  } else max_num = y;
+  if (z > max_num) {
+    max_num = z;
+  }
+  return max_num;
+}
+console.log(maxnum(3, 5, 7));
